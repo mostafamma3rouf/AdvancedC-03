@@ -149,6 +149,53 @@ namespace AdvancedC_03
             //foreach (var value in phoneBook.Values) // Print all Values on another line
             //    Console.Write(value + ", ");
             #endregion
+
+            #region Exercise 4: Unique Email Validator
+            /*
+             * Use Collection to manage unique email addresses.
+                Create a HashSet<string> with a case-insensitive comparer: new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+                Add these emails: "ahmed@test.com", "AHMED@test.com", "sara@test.com", "Sara@Test.Com"
+                Print Count — how many are actually stored? Explain why.
+                Create two sets: Set A = {1,2,3,4,5} and Set B = {4,5,6,7,8}
+                Print the result of: UnionWith, IntersectWith, ExceptWith
+                Use IsSubsetOf to check if {1,2} is a subset of Set A
+             */
+            //HashSet<string> uniqueEmails = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+            //// Add emails
+            //uniqueEmails.Add("ahmed@test.com");
+            //uniqueEmails.Add("AHMED@test.com");
+            //uniqueEmails.Add("sara@test.com");
+            //uniqueEmails.Add("Sara@Test.Com");
+
+            //Console.WriteLine(uniqueEmails.Count); // Count
+            ////how many are actually stored? => 2
+            ////Explain why => because HashSet is case-insensitive and it only stores unique values.
+            //Console.WriteLine("------------------------------");
+
+            //HashSet<int> setA = new HashSet<int> { 1, 2, 3, 4, 5 }; // Set A
+            //HashSet<int> setB = new HashSet<int> { 4, 5, 6, 7, 8 }; // Set B
+
+            //// UnionWith
+            //HashSet<int> unionSet = new HashSet<int>(setA);
+            //unionSet.UnionWith(setB);
+
+            //foreach (int number in unionSet)
+            //    Console.WriteLine(number);
+            //Console.WriteLine("------------------------------");
+
+            //// IntersectWith
+            //HashSet<int> intersectSet = new HashSet<int>(setA);
+            //intersectSet.IntersectWith(setB);
+
+            //foreach (int number in intersectSet)
+            //    Console.WriteLine(number);
+            //Console.WriteLine("------------------------------");
+
+            //HashSet<int> subset = new HashSet<int> { 1, 2 };
+            //bool result = subset.IsSubsetOf(setA);
+            //Console.WriteLine($"Is (1, 2) a subset of Set A? {result}");
+            #endregion
         }
     }
 }
