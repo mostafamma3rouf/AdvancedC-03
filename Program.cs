@@ -196,6 +196,22 @@ namespace AdvancedC_03
             //bool result = subset.IsSubsetOf(setA);
             //Console.WriteLine($"Is (1, 2) a subset of Set A? {result}");
             #endregion
+
+            #region Search
+            #region Span<T>
+            // Represents a strongly typed list of objects that can be accessed by index.
+            // Provides methods to search, sort, and manipulate lists.
+            #endregion
+
+            #region SortedList<TKey, TValue>
+            //Represents a collection of key/value pairs
+            //that are sorted by key based on the associated IComparer<T> implementation.
+            #endregion
+
+            #region SortedDictionary<TKey, TValue>
+            //Represents a collection of key/value pairs that are sorted on the key.
+            #endregion
+            #endregion
         }
     }
 }
